@@ -33,11 +33,8 @@ div.container>form{
 
 #count{
     text-align: center;
-}
-
-#count{
-    text-align: center;
     outline: none;
+    
 }
 
 #count:focus{
