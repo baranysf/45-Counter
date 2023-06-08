@@ -1,7 +1,6 @@
 function up_now(){
     event.preventDefault();
     var count;
-    document.getElementById('down').disabled=false;
 
     count= document.getElementById('count').value;
     
@@ -13,9 +12,6 @@ function up_now(){
         alert('Sayaç 10 sayısından büyük olamaz.')
     }
 
-    if(count==10){
-        document.getElementById('up').disabled=true;
-    }
     document.getElementById('count').value=count;
 
     console.log(count);
@@ -25,7 +21,6 @@ function up_now(){
 function down_now(){
     event.preventDefault();
     var count;
-    document.getElementById('up').disabled=false;
 
     count= document.getElementById('count').value;
 
@@ -35,12 +30,7 @@ function down_now(){
     else(
         alert('Sayaç 0 sayısından küçük olamaz.')
     )
-    if(count== -10){
-        document.getElementById('down').disabled=true;
-    }
-    if(count< -10){
-        document.getElementById('down').disabled=false;
-    }
+
 
 
     document.getElementById('count').value=count;
